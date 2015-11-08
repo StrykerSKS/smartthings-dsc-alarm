@@ -11,7 +11,7 @@ definition(
     namespace: "StrykerSKS",
     author: "Sean Kendall Schneyer <sean@linuxbox.org>",
     description: "DSC Alarm Integration App",
-    category: "My Apps",
+    category: "Safety & Security",
     iconUrl: "https://dl.dropboxusercontent.com/u/2760581/dscpanel_small.png",
     iconX2Url: "https://dl.dropboxusercontent.com/u/2760581/dscpanel_large.png",
     oauth: true
