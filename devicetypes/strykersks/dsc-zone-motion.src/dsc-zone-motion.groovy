@@ -10,7 +10,7 @@
 
 // for the UI
 metadata {
-  definition (name: "DSC Zone Motion", namespace: StrykerSKS, author: "Sean Kendall Schneyer <sean@linuxbox.org>") {
+  definition (name: "DSC Zone Motion", namespace: "StrykerSKS", author: "Sean Kendall Schneyer <sean@linuxbox.org>") {
     // Change or define capabilities here as needed
     capability "Refresh"
     capability "Motion Sensor"
