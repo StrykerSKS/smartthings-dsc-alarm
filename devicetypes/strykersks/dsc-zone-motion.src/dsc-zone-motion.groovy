@@ -4,12 +4,13 @@
  *  Author: Matt Martz <matt.martz@gmail.com>
  *  Date: 2014-04-28
  *  Modified to be a motion device: Kent Holloway <drizit@gmail.com>
+ *  Modified for SmartThings IDE GitHub integration: Sean Kendall Schneyer <sean@linuxbox.org>
  *  Date: 2014-05-24
  */
 
 // for the UI
 metadata {
-  definition (name: "DSC Zone Motion", author: "matt.martz@gmail.com") {
+  definition (name: "DSC Zone Motion", namespace: StrykerSKS, author: "Sean Kendall Schneyer <sean@linuxbox.org") {
     // Change or define capabilities here as needed
     capability "Refresh"
     capability "Motion Sensor"
