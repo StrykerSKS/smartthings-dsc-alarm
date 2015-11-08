@@ -2,12 +2,13 @@
  *  DSC Zone Device
  *
  *  Author: Matt Martz <matt.martz@gmail.com>
+ *  Updates by: Sean Schneyer <sean@linuxbox.org>
  *  Date: 2014-04-28
  */
 
 // for the UI
 metadata {
-  definition (name: "DSC Zone", author: "matt.martz@gmail.com") {
+  definition (name: "DSC Zone Contact", namespace: "StrykerSKS", author: "Sean Kendall Schneyer <sean@linuxbox.org>") {
     // Change or define capabilities here as needed
     capability "Refresh"
     capability "Contact Sensor"
