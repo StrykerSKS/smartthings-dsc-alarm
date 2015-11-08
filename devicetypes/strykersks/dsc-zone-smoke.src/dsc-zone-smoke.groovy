@@ -3,12 +3,13 @@
  *
  *  Original Device Author: Matt Martz <matt.martz@gmail.com>
  *  Smoke Alarm Additions Author: Dan S <coke12oz@hotmail.com>
+ *  Integration with SmartThings IDE and GitHub: Sean Kendall Schneyer <sean@linuxbox.org>
  *  Date: 2014-04-28
  */
 
 // for the UI
 metadata {
-  definition (name: "DSC Zone Smoke", author: "matt.martz@gmail.com") {
+  definition (name: "DSC Zone Smoke", namespace: "StrykerSKS", author: "Sean Kendall Schneyer <sean@linuxbox.org>") {
     // Change or define capabilities here as needed
     capability "Refresh"
     capability "Smoke Detector"
