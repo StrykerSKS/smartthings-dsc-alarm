@@ -3,13 +3,14 @@
  *
  *  Author: Kent Holloway <drizit@gmail.com>
  *  Modified by: Matt Martz <matt.martz@gmail.com>
+ *  Modified for SmartThings IDE Integration by: Sean Kendall Schneyer <sean@linux box.org>
  */
 
 definition(
-    name: "DSC Integration",
-    namespace: "",
-    author: "Kent Holloway <drizit@gmail.com>",
-    description: "DSC Integration App",
+    name: "DSC Alarm Integration",
+    namespace: "StrykerSKS",
+    author: "Sean Kendall Schneyer <sean@linuxbox.org>",
+    description: "DSC Alarm Integration App",
     category: "My Apps",
     iconUrl: "https://dl.dropboxusercontent.com/u/2760581/dscpanel_small.png",
     iconX2Url: "https://dl.dropboxusercontent.com/u/2760581/dscpanel_large.png",
