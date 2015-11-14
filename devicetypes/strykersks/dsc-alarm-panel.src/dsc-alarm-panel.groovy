@@ -4,7 +4,7 @@
  *  Author: Sean Kendall Schneyer <sean@linuxbox.org>
  *  Date: 2015-11-14
  *  
- *  Inspired by and combines ideas from obycode and Kent Holloway <drizit@gmail.com>
+ *  Inspired by and combines ideas from obycode, Kent Holloway <drizit@gmail.com> and oehokie
  *
  */
 
