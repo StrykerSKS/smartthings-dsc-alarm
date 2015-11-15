@@ -48,7 +48,36 @@ metadata {
    state "default", label: 'Night Arm', action: "nightarm", icon: "st.Weather.weather4", backgroundColor: "#2078b8", nextState: "default"
   }
   
-  main(["statusButton","nightButton"])
+  standardTile("alarmStatus","device.alarmStatus", width: 1, height: 1, canChangeIcon: true) {
+   state "ready", label: 'Ready', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "readyf", label: 'Ready - F', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "notready", label: 'Not Ready', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "alarming", label: 'ALARMING', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "entry", label: 'Entry Delay', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "exit", label: 'Exit Delay', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "lockout", label: 'Keypad Lockout', action: "f", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "fail", label: 'Failed to Arm', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "away", label: 'Armed - Away', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "stay", label: 'Armed - Stay', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "zeroaway", label: 'Zero Entry Away', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "zerostay", label: 'Zero Entry Stay', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+   state "disarmed", label: 'Disarmed', action: "", icon: "", backgroundColor: "#ffffff", nextState: ""
+  }
+  
+  standardTile("update", "default", inactiveLabel: false) {
+   state "default", action:"updatestatus", icon:"st.secondary.refresh"
+  }
+  
+  standardTile("disarmButton", "device.button", inactiveLabel:false) {
+   state "default", label:"Disarm", icon:"st.Home.home2", action:"disarm"
+  }
+  
+  standardTile("chimeToggle", "device.switch", canChangeIcon: true) {
+   state "off", label: "Chime", icon:"st.Home.home2", action:"chime.on", backgroundColor: "#ffffff"
+   state "on", label: "Chime", icon:"st.Home.home2", action: "chime.off", backgroundColor: "#E60000"
+  }
+
+  main(["statusButton","nightButton","alarmStatus","update","disarmButton","chimeToggle"])
   details(["statusButton","nightButton"])
  }
 }
