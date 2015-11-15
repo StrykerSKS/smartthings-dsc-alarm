@@ -72,13 +72,13 @@ metadata {
    state "default", label:"Disarm", icon:"st.Home.home2", action:"disarm"
   }
   
-  standardTile("chimeToggle", "device.switch", canChangeIcon: true) {
-   state "off", label: "Chime", icon:"st.Home.home2", action:"chime.on", backgroundColor: "#ffffff"
-   state "on", label: "Chime", icon:"st.Home.home2", action: "chime.off", backgroundColor: "#E60000"
+  standardTile("chimeToggleButton", "device.chimeh", width: 1, height: 1, canChangeIcon: false) {
+   state "off", label: "Chime", icon:"st.secondary.off", action:"chimeToggle", backgroundColor: "#ffffff"
+   state "on", label: "Chime", icon:"st.secondary.beep", action: "chimeToggle", backgroundColor: "#ffffff"
   }
 
   main(["statusButton","nightButton","alarmStatus","update","disarmButton","chimeToggle"])
-  details(["statusButton","nightButton"])
+  details(["statusButton","nightButton","alarmStatus","update","disarmButton","chimeToggle"])
  }
 }
 
